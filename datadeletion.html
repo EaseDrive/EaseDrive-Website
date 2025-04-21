@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion - EaseDrive</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #0066cc; }
+        .deletion-form { background: #f5f5f5; padding: 20px; border-radius: 5px; }
+        input, button { padding: 8px; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>Data Deletion Request</h1>
+    
+    <div class="deletion-form">
+        <h2>Request Account Deletion</h2>
+        <p>To delete your EaseDrive account and associated data:</p>
+        
+        <form id="deletionForm">
+            <label for="email">Registered Email:</label><br>
+            <input type="email" id="email" required><br>
+            
+            <label for="phone">Registered Phone:</label><br>
+            <input type="tel" id="phone" required><br>
+            
+            <label for="reason">Reason (optional):</label><br>
+            <textarea id="reason" rows="3"></textarea><br><br>
+            
+            <button type="submit">Submit Deletion Request</button>
+        </form>
+    </div>
+    
+    <h2>What Gets Deleted</h2>
+    <p>All personal data including:</p>
+    <ul>
+        <li>Account information</li>
+        <li>Ride history</li>
+        <li>Payment information</li>
+        <li>App preferences</li>
+    </ul>
+    
+    <h2>Processing Time</h2>
+    <p>Requests are processed within 30 days. You'll receive confirmation at your registered email.</p>
+    
+    <p>For immediate assistance, contact us at <a href="mailto:easedriver786@gmail.com">easedriver786@gmail.com</a> or call <a href="tel:03016090124">0301-6090124</a>.</p>
+</body>
+<script>
+    document.getElementById('deletionForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Your data deletion request has been received. We will process it within 30 days.');
+    });
+</script>
+</html>
